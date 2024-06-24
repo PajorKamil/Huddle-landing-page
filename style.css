@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/*
+
+font-family: "Poppins", sans-serif;
+- Weights: 400, 600
+font-family: "Open Sans", sans-serif;
+- Weights: 400
+
+
+- Violet: hsl(257, 40%, 49%)
+- Soft Magenta: hsl(300, 69%, 71%)
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100svh;
+    width: 100svw;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+main {
+    margin-top: 5em;
+    display: flex;
+}
+
+.second {
+    padding-left: 4em;
+}
+
+.second > p:nth-of-type(1),
+.second > p:nth-of-type(2) {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 3em;
+    font-weight: 400;
+}
+
+.second > p:nth-of-type(3) {
+    margin-top: .5em;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    width: 31em;
+    font-weight: 400;
+    margin-bottom: 3em;
+}
+
+a {
+    background-color: white;
+    padding: 1em 3em;
+    border-radius: 2em;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+}
+
+a:hover {
+    background-color: #e882e8;
+    color: white;
+}
+
+footer {
+    margin-right: 3em;
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    bottom: 2em;
+    right: 0;
+}
+
+svg {
+    filter: invert(100%) sepia(0%) saturate(7484%) hue-rotate(294deg) brightness(115%) contrast(100%);
+    width: 1.2em;
+    height: 1.2em;
+    padding: .5em;
+    margin: .5em;
+    border-radius: 50%;
+    overflow: visible;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+
+svg:hover {
+    filter: invert(67%) sepia(79%) saturate(963%) hue-rotate(269deg) brightness(106%) contrast(82%);
+    border: 1px solid #e882e8;
+}
+
+@media screen and (max-width: 1300px) {
+    main {
+        flex-direction: column;
+    }
+
+    .first {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .first > img {
+        width: 30em;
+    }
+
+    .second {
+        padding: 0;
+        text-align: center;
+    }
+
+    a {
+        padding: 1em 5em;
+    }
+
+    footer {
+        width: 100%;
+        margin: 0px;
+        margin-top: 4em;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 540px) {
+
+    header > img {
+        width: 10em;
+    }
+
+    main {
+        margin-top: 0;
+        flex-direction: column;
+    }
+
+    .first {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .first > img {
+        width: 20em;
+    }
+
+    .second {
+        padding: 0;
+        text-align: center;
+    }
+
+    .second > p:nth-of-type(1),
+    .second > p:nth-of-type(2) {
+        font-size: 2em;
+    }
+
+    .second > p:nth-of-type(3) {
+        font-size: 1em;
+        width: 340px;
+    }
+
+    a {
+        padding: 1em 5em;
+    }
+
+    footer {
+        width: 100%;
+        margin: 0px;
+        margin-top: 4em;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        position: relative;
+    }
+}
